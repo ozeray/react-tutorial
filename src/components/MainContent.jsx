@@ -23,6 +23,8 @@ import CopyToClipboardPortal from "./portal/CopyToClipboard";
 import Switcher from "./keys/Switcher";
 import UseEffectWithoutDepArray from "./use_effect/UseEffectWithoutDepArray";
 import UseEffectWithEmptyDepArray from "./use_effect/UseEffectWithEmptyDepArray";
+import DataFetching from "./use_effect/DataFetching";
+import ParentProvider from "./context_api/data_providers/ParentProvider";
 
 const MainContent = () => {
   const city = "Mersin";
@@ -32,6 +34,10 @@ const MainContent = () => {
   return (
     <main id="main">
       <h2>Each widget corresponds to some feature in React</h2>
+      <br />
+      <ParentProvider />
+      <br />
+      <DataFetching />
       <br />
       <UseEffectWithEmptyDepArray />
       <br />

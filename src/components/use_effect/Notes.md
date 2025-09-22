@@ -1,6 +1,6 @@
 # Using useEffect Hook
 
-In general, useEffect can be used to load some data, update DOM, etc. during component initialization or state changes.
+In general, useEffect hook can be used to fetch data, update DOM, etc. during component initialization or state changes.
 
 ## No dependency array
 
