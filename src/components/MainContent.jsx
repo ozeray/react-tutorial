@@ -21,6 +21,8 @@ import ShoppingList from "./states/ShoppingList";
 import CopyToClipboard from "./states/CopyToClipboard";
 import CopyToClipboardPortal from "./portal/CopyToClipboard";
 import Switcher from "./keys/Switcher";
+import UseEffectWithoutDepArray from "./use_effect/UseEffectWithoutDepArray";
+import UseEffectWithEmptyDepArray from "./use_effect/UseEffectWithEmptyDepArray";
 
 const MainContent = () => {
   const city = "Mersin";
@@ -30,6 +32,10 @@ const MainContent = () => {
   return (
     <main id="main">
       <h2>Each widget corresponds to some feature in React</h2>
+      <br />
+      <UseEffectWithEmptyDepArray />
+      <br />
+      <UseEffectWithoutDepArray />
       <br />
       <Switcher />
       <br />
