@@ -17,7 +17,7 @@ const DataFetching = () => {
 
   return (
     <div className="demo">
-      <h2>Data fetching by useEffect</h2>
+      <h2>Data fetching by useEffect hook</h2>
       {data.length > 0 ? (
         <ul>
           {data.slice(0, 4).map((post) => (

@@ -10,7 +10,7 @@ const UserProvider = ({ children }) => {
 
   return (
     <div className="demo">
-      <h2>2. Data sharing using data provider & useContext method</h2>
+      <h2>2. Data sharing using data provider & useContext hook</h2>
       <UserContext.Provider value={{ user, updateUser }}>
         {children}
       </UserContext.Provider>

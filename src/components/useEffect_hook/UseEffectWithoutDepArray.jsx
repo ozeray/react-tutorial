@@ -5,12 +5,12 @@ const UseEffectWithoutDepArray = () => {
 
   useEffect(() => {
     console.log("useEffect without array called");
-    document.title = `Value is ${value}`;
+    document.title = `React Tutorial ${value}`;
   }); // No dep array
 
   return (
     <div className="demo">
-        <h2>useEffect without dependency array</h2>
+        <h2>useEffect hook without dependency array</h2>
         <h4>Value: {value}</h4>
         <button onClick={() => setValue(value + 1)}>Increment Value</button>
     </div>

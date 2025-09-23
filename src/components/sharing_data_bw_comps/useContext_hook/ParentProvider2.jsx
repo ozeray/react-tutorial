@@ -9,7 +9,7 @@ const ParentProvider2 = () => {
 
   return (
     <div className="demo">
-      <h2>1. Data sharing using data provider & useContext method</h2>
+      <h2>1. Data sharing using data provider & useContext hook</h2>
       <Data.Provider value={data}>
           <Child2 />
       </Data.Provider>
