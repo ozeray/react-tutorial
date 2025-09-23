@@ -33,6 +33,7 @@ import Counter from "./useReducer_hook/Counter";
 import FocusElement from "./useRef_hook/FocusElement";
 import Timer from "./useRef_hook/Timer";
 import DataFetchingV2 from "./custom_hooks/DataFetchingV2";
+import UniqueId from "./useId_hook/UniqueId";
 
 const MainContent = () => {
   const city = "Mersin";
@@ -42,6 +43,8 @@ const MainContent = () => {
   return (
     <main id="main">
       <h2>Each widget corresponds to some feature in React</h2>
+      <br />
+      <UniqueId />
       <br />
       <DataFetchingV2 />
       <Timer />
