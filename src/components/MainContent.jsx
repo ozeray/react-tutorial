@@ -8,23 +8,28 @@ import StyleWithObject from "./css_styles/StyleWithObject";
 import StyleWithCssFile from "./css_styles/StyleWithCssFile";
 import Computer from "./icons/Computer";
 import Events from "./events/Events";
-import StateDemo from "./states/StateDemo";
-import ArrayState from "./states/ArrayState";
-import ObjectState from "./states/ObjectState";
-import ArrayOfObjectsState from "./states/ArrayOfObjectsState";
-import StateSharing from "./states/StateSharing";
-import StateWithFunctionInitialization from "./states/StateWithFunctInit";
-import RandomNumberState from "./states/RandomNumberState";
-import UseEffectDemo from "./states/UseEffectDemo";
-import ProfileUpdate from "./states/ProfileUpdate";
-import ShoppingList from "./states/ShoppingList";
-import CopyToClipboard from "./states/CopyToClipboard";
+import StateDemo from "./useState_hook/StateDemo";
+import ArrayState from "./useState_hook/ArrayState";
+import ObjectState from "./useState_hook/ObjectState";
+import ArrayOfObjectsState from "./useState_hook/ArrayOfObjectsState";
+import StateSharing from "./useState_hook/StateSharing";
+import StateWithFunctionInitialization from "./useState_hook/StateWithFunctInit";
+import RandomNumberState from "./useState_hook/RandomNumberState";
+import UseEffectDemo from "./useState_hook/UseEffectDemo";
+import ProfileUpdate from "./useState_hook/ProfileUpdate";
+import ShoppingList from "./useState_hook/ShoppingList";
+import CopyToClipboard from "./useState_hook/CopyToClipboard";
 import CopyToClipboardPortal from "./portal/CopyToClipboard";
 import Switcher from "./keys/Switcher";
-import UseEffectWithoutDepArray from "./use_effect/UseEffectWithoutDepArray";
-import UseEffectWithEmptyDepArray from "./use_effect/UseEffectWithEmptyDepArray";
-import DataFetching from "./use_effect/DataFetching";
-import ParentProvider from "./context_api/data_providers/ParentProvider";
+import UseEffectWithoutDepArray from "./useEffect_hook/UseEffectWithoutDepArray";
+import UseEffectWithEmptyDepArray from "./useEffect_hook/UseEffectWithEmptyDepArray";
+import DataFetching from "./useEffect_hook/DataFetching";
+import ParentProvider from "./sharing_data_bw_comps/data_consumers/ParentProvider";
+import ParentProvider2 from "./sharing_data_bw_comps/useContext_hook/ParentProvider2";
+import UserProvider from "./sharing_data_bw_comps/useContext_hook/exercise/UserContext";
+import UserProfile from "./sharing_data_bw_comps/useContext_hook/exercise/UserProfile";
+import UpdateUser from "./sharing_data_bw_comps/useContext_hook/exercise/UpdateUser";
+import Counter from "./useReducer_hook/Counter";
 
 const MainContent = () => {
   const city = "Mersin";
@@ -34,6 +39,15 @@ const MainContent = () => {
   return (
     <main id="main">
       <h2>Each widget corresponds to some feature in React</h2>
+      <br />
+      <Counter />
+      <br />
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
+      <br />
+      <ParentProvider2 />
       <br />
       <ParentProvider />
       <br />

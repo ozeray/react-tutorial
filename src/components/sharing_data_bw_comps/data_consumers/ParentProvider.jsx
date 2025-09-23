@@ -11,14 +11,14 @@ const ParentProvider = () => {
 
   return (
     <div className="demo">
-      <h2>Data sharing using Data Provider - Consumer method</h2>
+      <h2>Data sharing using data provider - consumer tag method</h2>
       <Data.Provider value={name}>
         <Data2.Provider value={age}>
             <Child />
         </Data2.Provider>
       </Data.Provider>
       <br />
-      <button onClick={() => setName("Here is your data, son..")}>Set Data for Nested Child</button>
+      <button onClick={() => setName("Here is your data, son..: Ahmet")}>Set Data for Nested Child</button>
     </div>
   );
 };
